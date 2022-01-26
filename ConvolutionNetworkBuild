@@ -1,0 +1,16 @@
+Convolution Network:
+For designing the training model, we use the training data sample in steps of convolution layers. We implemented three convolution layers that use linear activation functions. This is done to transform the matrix feature map to a vector for a dense layer. The given image from the noise dataset looks like 28 * 28. This matrix gets converted into an array. The value inside the matrix gets rescaled between 0 and 1. Finally it gets reshape into 28 * 28 * 1.
+We implement three convolution layers. Each convolution layer is subjected to max pooling of size 2x2 matrix. We then flatten and dense these outputs to get the desired graph plot of the processed image.
+I use Conv2D() function followed by the LeakyReLu function. This can be seen in the Figure: Convolution Layer Network. We use Conv2D() as the training dataset involves images. The LeakyReLu() function is used to separate the 10 classes which are not separable. It uses a non-decision linear boundary.
+The third layer is the MaxPooling().
+ Data Modeling and Definition Section:
+The modules needed to implement this code is imported as seen in the image below:
+ Figure: Modeling of Data and Module importing.
+With these import modules I use a batch size of 30 and a total of 20 epochs to find the accuracy of the model. The validation split value is 0.6. These values are chosen based on the memory of the model and program.
+
+ Results:
+The results can be compared by comparing the model loss and the model accuracy from the figure given below:
+Figure: Resultant graph for Model Loss and Accuracy.
+ 
+From the results we can say that the model accuracy follows the same graphline as the model loss graph. This proves that the testing model has no overfitting of data. Hence, this is a viable model. As the validation and training accuracy are close to each other, we can say that the model’s learning capability increased in the testing model as compared to the training model.
+The accuracy in the test set was 90.44%

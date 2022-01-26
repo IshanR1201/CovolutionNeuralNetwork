@@ -1,1 +1,4 @@
 # CovolutionNeuralNetwork
+
+Convolution Neural Network - In deep learning, a convolutional neural network (CNN, or ConvNet) is a class of artificial neural network, most commonly applied to analyze visual imagery. CNNs use relatively little pre-processing compared to other image classification algorithms. This means that the network learns to optimize the filters through automated learning, whereas in traditional algorithms these filters are hand-engineered.
+Convolutional neural network indicates that the network employs a mathematical operation called convolution. In a CNN, the input is a tensor with a shape: (number of inputs) x (input height) x (input width) x (input channels). After passing through a convolutional layer, the image becomes abstracted to a feature map, also called an activation function, with shape: (number of inputs) x (feature map height) x (feature map width) x (feature map channels).
